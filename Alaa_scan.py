@@ -1,5 +1,6 @@
 import socket
 from colorama import Fore, Style, init
+import pyfiglet
 
 init(autoreset=True)
 
@@ -25,13 +26,10 @@ def port_scan(target):
             pass
 
 def main():
-    # شعار البداية
-    print(Fore.CYAN + """
-====================================
-          ♠ Alaa Scan ♠
-   Created by Alaa Odeh Barak
-====================================
-""")
+    # شعار ASCII Art كبير باسمك
+    banner = pyfiglet.figlet_format("Alaa Barak")
+    print(Fore.CYAN + banner)
+    print(Fore.YELLOW + "Created by Eng Alaa Barak\n")
 
     while True:
         print(Fore.BLUE + "\n♠ Alaa_scan Tool ♠")
