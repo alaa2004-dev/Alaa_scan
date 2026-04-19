@@ -25,6 +25,14 @@ def port_scan(target):
             pass
 
 def main():
+    # شعار البداية
+    print(Fore.CYAN + """
+====================================
+          ♠ Alaa Scan ♠
+   Created by Alaa Odeh Barak
+====================================
+""")
+
     while True:
         print(Fore.BLUE + "\n♠ Alaa_scan Tool ♠")
         print(Fore.YELLOW + "1. Get Localhost")
